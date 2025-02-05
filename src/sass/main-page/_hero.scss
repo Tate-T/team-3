@@ -1,0 +1,13 @@
+.games {
+  &__container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    color: $black-text;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
