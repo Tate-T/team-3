@@ -1,0 +1,65 @@
+.year {
+  &__container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    color: $black-text;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__div{
+    width: 576px;
+    height: 35px;
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+  }
+
+  &__form {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: $color-button;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 167px;
+  }
+
+  &__input {
+    width: 170px;
+    color: $grey-text;
+    background-color: $color-button;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    margin-left: 7px;
+    border-radius: 20px;
+    
+  }
+
+  &__button {
+    width: 38px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: $black-text;
+  }
+
+  &__subtitle {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+  }
+}
