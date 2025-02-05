@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #FFFFFF;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1070px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.subline {
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  display: inherit;
+  height: 1px;
+  width: 536px;
+  background-color: #000;
+}
+
+.games__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.games__title {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.year__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.year__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.year__div {
+  width: 576px;
+  height: 35px;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+}
+.year__form {
+  width: 215px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #d7d7d7;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 167px;
+}
+.year__input {
+  width: 170px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  margin-left: 7px;
+  border-radius: 20px;
+}
+.year__button {
+  width: 38px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #000;
+}
+.year__subtitle {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=main.css.map */
