@@ -1,4 +1,4 @@
-.year {
+.time {
   &__container {
     padding-top: 36px;
     padding-bottom: 36px;
@@ -6,33 +6,31 @@
 
   &__title {
     color: $black-text;
+    font-family: "Montserrat Alternates";
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 36px;
   }
 
-  &__div{
-    width: 576px;
-    height: 35px;
-    margin-top: 36px;
+  &__div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 250px;
+    gap: 33px;
   }
 
   &__form {
-    width: 215px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
     background-color: $color-button;
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
-    margin-right: 167px;
   }
 
   &__input {
-    width: 170px;
+    width: 110px;
     color: $grey-text;
     background-color: $color-button;
     font-family: "Montserrat Alternates";
@@ -45,20 +43,11 @@
   }
 
   &__button {
-    width: 38px;
+    width: 35px;
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 0px 20px 20px 0px;
     background-color: $black-text;
-  }
-
-  &__subtitle {
-    color: $black-text;
-    font-family: "Montserrat Alternates";
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
   }
 }
