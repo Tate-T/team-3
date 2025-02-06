@@ -1,0 +1,72 @@
+.game {
+  &__container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    color: $black-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button {
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    border-radius: 20px;
+    background-color: $black-text;
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__choice {
+    width: 182px;
+    padding: 10px 20px;
+    margin-left: 445px;
+    border-radius: 20px;
+    background-color: $black-text;
+    color: $background-color;
+    font-family: "Montserrat Alternates";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__second-list {
+    position: absolute;
+    right: 370px;
+    top: 653px;
+  }
+}
