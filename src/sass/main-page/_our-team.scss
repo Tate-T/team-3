@@ -1,0 +1,47 @@
+.team {
+  &__container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__box {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: $box-color;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+}
