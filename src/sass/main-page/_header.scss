@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+ 
+ 
+
+  &__firstcontainer {
+    display: flex;
+    gap: 9px;
+  }
+  &__title {
+    color: $black-text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+  }
+  &__span {
+    color: $black-text;
+    font-family: Sacramento;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__list {
+    margin-left: 81px;
+    display: flex;
+    gap: 50px;
+  }
+  &__linktitle {
+    color: $black-text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__img {
+    width: 40px;
+    height: 20px;
+  }
+  &__minortitle {
+    color: $black-text;
+    // text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

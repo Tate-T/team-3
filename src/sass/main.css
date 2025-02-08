@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #FFFFFF;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1070px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.subline {
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  display: inherit;
+  height: 1px;
+  width: 536px;
+  background-color: #000;
+}
+
+.header__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header__span {
+  color: #000;
+  font-family: Sacramento;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.games__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.games__title {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.year__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.year__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.year__div {
+  width: 576px;
+  height: 35px;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+}
+.year__form {
+  width: 215px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #d7d7d7;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 167px;
+}
+.year__input {
+  width: 170px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  margin-left: 7px;
+  border-radius: 20px;
+}
+.year__button {
+  width: 38px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #000;
+}
+.year__subtitle {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.game__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.game__title {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.game__div {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.game__list {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+  justify-content: center;
+}
+.game__button {
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-color: #000;
+}
+.game__img {
+  width: 40px;
+  height: 40px;
+}
+.game__text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.game__choice {
+  width: 182px;
+  padding: 10px 20px;
+  margin-left: 445px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #FFFFFF;
+  font-family: "Montserrat Alternates";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.game__second-list {
+  position: absolute;
+  top: 650px;
+  margin-left: 740px;
+}
+
+.calculator__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.calculator__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.calculator__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.calculator__input {
+  width: 95px;
+  border: none;
+  padding: 10px 20px;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-color: #d7d7d7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+}
+.calculator__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.calculator__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+}
+.calculator__inputresult {
+  width: 80px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #d7d7d7;
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.time__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.time__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.time__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+}
+.time__form {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #d7d7d7;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.time__input {
+  width: 110px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  margin-left: 7px;
+  border-radius: 20px;
+}
+.time__button {
+  width: 35px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #000;
+}/*# sourceMappingURL=main.css.map */
