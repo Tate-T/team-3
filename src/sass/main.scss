@@ -1,4 +1,5 @@
 // @import "./";
+@import "./base/reset";
 @import "./utils/variables";
 @import "./base/common";
 @import "./main-page/header";
@@ -12,4 +13,4 @@
 
 
 
-// @import "./main-page/modal"
+@import "./main-page/modal"
