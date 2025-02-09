@@ -1,7 +1,9 @@
 .header {
-  display: flex;
- 
- 
+  &__megacontainer {
+    display: flex;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
   &__firstcontainer {
     display: flex;
@@ -29,6 +31,8 @@
     margin-left: 81px;
     display: flex;
     gap: 50px;
+    margin-right: 361px;
+    width: 370px;
   }
   &__linktitle {
     color: $black-text;
@@ -36,6 +40,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  &__lastcontainer {
+    display: flex;
+    gap: 51px;
+    width: 180px;
   }
   &__img {
     width: 40px;
