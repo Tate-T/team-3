@@ -1,3 +1,65 @@
-footer {
-    
+.footer {
+    padding-top: 61px;
+    &__megacontainer {
+        display: flex; 
+    }
+    &__container {
+        margin: 0;
+    }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 185px;
+    margin-right: auto;
+  }
+  &__contacts {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+  }
+  &__email {
+    display: flex;
+  }
+  &__input {
+    padding: 10px 80px 10px 10px;
+    color: $grey-text;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background: $color-button;
+  }
+  &__button {
+    color: #fff;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+    border-radius: 20px;
+    background: #000;
+  }
+  &__treecontainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+  }
+  &__additionalcontainer {
+    display: flex;
+    gap: 36px;
+  }
+  &__text {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
