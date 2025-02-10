@@ -1,0 +1,30 @@
+.guess {
+  &__maintitle {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__input {
+    padding: 10px 45px 10px 10px;
+    border-left: 20px;
+    background: #d7d7d7;
+    color: $grey-text;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__button {
+    border: none;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: $black-text;
+  }
+}
