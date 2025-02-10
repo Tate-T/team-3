@@ -4,11 +4,13 @@
     <div class="year__div">
       <form class="year__form">
         <input
+          required
           class="year__input"
-          type="search"
+          type="number"
+          id="yearInput"
           placeholder="Введіть рік народження"
         />
-        <button class="year__button" type="button">
+        <button class="year__button" type="button" id="yearBtn">
           <svg
             class="year__img"
             width="16"
@@ -31,7 +33,9 @@
           </svg>
         </button>
       </form>
-      <p class="year__subtitle">Ви народилися у високосний рік!</p>
+      <p id="yearResult" class="year__subtitle">
+        Ви народилися у високосний рік!
+      </p>
     </div>
   </div>
   <div class="subline">
