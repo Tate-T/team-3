@@ -1,4 +1,6 @@
 .guess {
+  padding-top: 36px;
+    padding-bottom: 36px;
   &__maintitle {
     color: $black-text;
     font-family: "Montserrat Alternates";
@@ -6,17 +8,35 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  &__bigcontainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 36px;
+  }
+  &__container {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: $color-button;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 202px;
   }
   &__input {
-    padding: 10px 45px 10px 10px;
-    border-left: 20px;
-    background: #d7d7d7;
+    outline: none;
+    width: 115px;
     color: $grey-text;
+    background-color: $color-button;
     font-family: "Montserrat Alternates";
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    text-align: center;
+    border: none;
+    margin-left: 7px;
+    border-radius: 20px;
   }
   &__button {
     border: none;
@@ -26,5 +46,13 @@
     padding: 10px;
     border-radius: 0px 20px 20px 0px;
     background-color: $black-text;
+  }
+  &__text {
+    color: #039900;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
