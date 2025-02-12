@@ -1,0 +1,15 @@
+.dinosaur {
+    &__container {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+  &__title {
+    color: $black-text;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+}
