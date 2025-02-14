@@ -5,6 +5,6 @@ import "./js/guess-number.js";
 import "./js/first-game.js";
 import "./js/calculator.js";
 import "./js/time.js";
-
+import "./js/footbal.js";
 
 import "./js/our-team.js";
