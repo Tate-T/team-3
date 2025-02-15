@@ -1,0 +1,38 @@
+.header {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    &__container {
+        display: flex;
+    }
+  &__firstcontainer {
+    display: flex;
+    gap: 9px;
+  }
+  &__title {
+    color: $black-text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+  }
+  &__span {
+    color: $black-text;
+    font-family: Sacramento;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__maintitle {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 100px;
+  }
+}

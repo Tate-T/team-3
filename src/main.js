@@ -8,3 +8,4 @@ import "./js/time.js";
 import "./js/footbal.js";
 
 import "./js/our-team.js";
+import "./js/footer.js";
