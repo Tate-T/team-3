@@ -2,6 +2,9 @@
   &__container {
     padding-top: 36px;
     padding-bottom: 36px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
   }
   &__title {
     color: $black-text;
@@ -19,7 +22,7 @@
     border-radius: 37px;
     border: 2px solid $black-text;
     background: #5abb58;
-    margin-left: 167px;
+    
   }
   &__ball {
     width: 50px;
