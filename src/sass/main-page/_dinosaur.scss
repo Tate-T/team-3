@@ -1,8 +1,11 @@
 .dinosaur {
-    &__container {
-        padding-top: 36px;
-        padding-bottom: 36px;
-    }
+  &__container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+  }
   &__title {
     color: $black-text;
     font-family: "Montserrat Alternates";
@@ -11,5 +14,56 @@
     font-weight: 400;
     line-height: normal;
     text-align: center;
+    margin-bottom: 36px;
+  }
+  &__game {
+    position: relative;
+    width: 720px;
+    height: 241px;
+    background-color: #eee;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .dinosaur {
+    &__dino {
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      width: 55px;
+      height: 55px;
+      border-radius: 5px;
+      transition: bottom 0.3s ease-in-out;
+    }
+  
+    &__dino.jump {
+      bottom: 120px;
+    }
+  
+    &__obstacle {
+      position: absolute;
+      bottom: 0;
+      right: -30px;
+      width: 30px;
+      height: 50px;
+      border-radius: 3px;
+      animation: moveObstacle 2s infinite linear;
+    }
+  
+    @keyframes moveObstacle {
+      0% { right: -30px; }
+      100% { right: 720px; }
+    }
+  }
+  
+  @keyframes moveObstacle {
+    0% { right: -30px; }
+    100% { right: 720px; }
+  }
+  @keyframes jump {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-100px); }
+    50% { transform: translateY(-120px); }
+    80% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
   }
 }
+
