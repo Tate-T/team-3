@@ -7,7 +7,7 @@
     <title>Coding Magic</title>
     
     <script type="module" crossorigin src="/team-3/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-3/assets/index-dbb93447.css">
+    <link rel="stylesheet" href="/team-3/assets/index-62de0316.css">
   </head>
   <body>
     
@@ -77,14 +77,17 @@
   <h1 class="header__title">Coding<span class="header__span">Magic</span></h1>
 </div>
   <ul class="header__list">
-    <li class="header__iteam">
-        <a href="./dinosaur.html" class="header__linktitle header__linkafter">Інтерактив</a>
+    <li class="header__iteam header__iteam-after">
+        <a href="#dinosaur" class="header__linktitle header__linkafter">Інтерактив</a>
+        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 1L5.5 6L1 1" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
     </li>
     <li class="header__iteam">
-        <a href="" class="header__linktitle">Наша команда</a>
+        <a href="#team" class="header__linktitle">Наша команда</a>
     </li>
     <li class="header__iteam">
-        <a href="./footer.html" class="header__linktitle">Контакти</a>
+        <a href="#footer" class="header__linktitle">Контакти</a>
     </li>
   </ul>
   <div class="header__lastcontainer">
@@ -296,7 +299,7 @@
   </div>
 </section>
 
-    <section class="dinosaur">
+    <section class="dinosaur" id="dinosaur">
     <div class="container dinosaur__container">
     <h1 class="dinosaur__title">Google динозавр</h1>
 <div class="dinosaur__game">
@@ -321,7 +324,7 @@
   </div>
 </section>
 
-    <section class="team">
+    <section id="team" class="team">
   <div class="container team__container">
     <h2 class="team__title">Наша команда</h2>
     <div class="team__div">
@@ -382,22 +385,23 @@
         </div>
         <div class="scientists__lists">
             <ul class="scientists__list1">
-                <button class="scientists__button">Які вчені народилися в 19 ст.</button>
-                <button class="scientists__button">Відсортувати вчених за алфавітом</button>
-                <button class="scientists__button">Відсортувати вчених за кількістю прожитих років</button>
-                <button class="scientists__button">Знайти вченого, який народився найпізніше</button>
+                <button class="scientists__button scientists__century">Які вчені народилися в 19 ст.</button>
+                <button class="scientists__button scientists__sort-alpha">Відсортувати вчених за алфавітом</button>
+                <button class="scientists__button scientists__sort-age">Відсортувати вчених за кількістю прожитих років</button>
+                <button class="scientists__button scientists__latest">Знайти вченого, який народився найпізніше</button>
             </ul>
             <ul class="scientists__list2">
-                <button class="scientists__button">Знайти рік народження Albert Einshtein</button>
-                <button class="scientists__button">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
-                <button class="scientists__button">Видалити всіх вчених, ім’я яких починається на “А”</button>
-                <button class="scientists__button">Знайти вченого, який прожив найдовше і вченого, <br> який прожив найменше</button>
+                <button class="scientists__button scientists__einstein">Знайти рік народження Albert Einstein</button>
+                <button class="scientists__button scientists__surname-c">Знайти вчених, прізвища яких починаються на літеру “C”</button>
+                <button class="scientists__button scientists__delete-a">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                <button class="scientists__button scientists__longest-shortest">Знайти вченого, який прожив найдовше і вченого, <br> який прожив найменше</button>
             </ul>
         </div>
-        <button class="scientists__buttons">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+        <button class="scientists__buttons scientists__same-letter">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
     </div>
 </section>
-    <footer class="footer">
+
+    <footer id="footer" class="footer">
   <div class="container footer__megacontainer">
   <div class="container footer__container">
     <svg
