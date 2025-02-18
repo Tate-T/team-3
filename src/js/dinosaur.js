@@ -1,10 +1,15 @@
 const dino = document.querySelector('.dinosaur__dino');
 const obstacle = document.querySelector('.dinosaur__obstacle');
+const startButton = document.querySelector('.dinosaur__start-button');
 let isJumping = false;
 let isGameOver = false;
 
+startButton.addEventListener('click', () => {
+  obstacle.style.animation = 'moveObstacle 2s infinite linear';
+});
+
 document.addEventListener('keydown', (e) => {
-  if (e.code === 'Space' && !isJumping && !isGameOver) {
+  if (e.code === 'Space' && !isJumping) {
     isJumping = true;
     dino.classList.add('jump');
     setTimeout(() => {
@@ -13,22 +18,17 @@ document.addEventListener('keydown', (e) => {
     }, 600);
   }
 });
-obstacle.style.animation = 'moveObstacle 2s infinite linear';
-function checkCollision() {
-  if (isGameOver){
-     return; 
-  }
+
+setInterval(() => {
   const dinoRect = dino.getBoundingClientRect();
   const obstacleRect = obstacle.getBoundingClientRect();
+
   if (
     dinoRect.right > obstacleRect.left &&
     dinoRect.left < obstacleRect.right &&
-    dinoRect.bottom > obstacleRect.top &&
-    dinoRect.top < obstacleRect.bottom
+    dinoRect.bottom > obstacleRect.top
   ) {
-    isGameOver = true; 
-    alert("Програли!");
-    obstacle.style.animation = 'none'; 
+    alert('Програли!');
+    obstacle.style.animation = 'none';
   }
-}
-setInterval(checkCollision, 10);
+}, 100);
