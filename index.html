@@ -510,12 +510,15 @@
   </ul>
   <div class="footer__treecontainer">
     <div class="footer__additionalcontainer">
+      <form action="">
       <input
         class="footer__input"
         type="email"
         placeholder="Ваша ел. адреса..."
+        required
       />
       <button type="button" data-modal-open class="footer__button">Підписатись</button>
+    </form>
     </div>
     <p class="footer__text">
       *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
@@ -550,8 +553,10 @@
       <p class="modal__name">Введіть своє ім’я:</p>
       <img class="modal__img sword" src="data:image/webp;base64,UklGRgYBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSLoAAAABcFtr29J8OAxGlS4nna7iMgi+UrzWzn7D4ftPGCAiFLZt2zRmd3sIdK+2s9lstnSwTbxut/s7XWKdddCnjM6kTO4zKdptJgVQTZzqNLKWmWtH0RGK3dObX5xaWIQPJE51lgzFFTsHsFlgTPjURAKwSFxk16zlgBUROxOL+JXp1DjiRKpVyR6r9kD0dSRQPBYbY+5iRaSYhtRq65hXY4LFmNlGDYlVA6C3zWt/V1QLFb+ET8gLMoH/FABWUDggJgAAANACAJ0BKh4AHgA+kUSdSqWjoqGoCACwEglpAAA9o6AA/vjPGsAA" alt="sword">
       <img class="modal__img game-development" src="data:image/webp;base64,UklGRogBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSDwBAAABkGLb2rI3577fH1T8ZAyR5eqOpXHlMCeyMBRmlAyqEhUzM1zxfjSEiJgAXrjlp+RPdwKI5hMfBBhPThlP1pqyjSnJRYslv936v8y07npCIIRaURjAONSCwiHYdyqFQ40UDoFcoHCoyahDwPaXgMJjTcbKXm0vG2micIjCAoVDTVA4ilP7QOEQjVAYAzhECwghASIXRnXytPzfPlIA6bD/ebWoV7y+3QPnv6ysrXy92kHXXhW1Fq8lJqWr99bun01MSncna1nC0DFGGHo/12PK3z2ZgDRlPInrdcBICMCoyeWkA2LKeBIdUDrb4PlRgUCUnnvWgAnBHefXE9qF/6kWsOOPAH3aCuA9Xl4rn82SV9fyg05ZGl9fLV+00P4nq6XrD/YImZp6clADpjK5X4dv10F3/W2Dqjb/9gMBVlA4ICYAAADQAgCdASoeAB4APpFEnUqlo6KhqAgAsBIJaQAAPaOgAP74zxrAAA==" alt="game-development">
-      <input class="modal__input" type="name" placeholder="Ваше ім’я...">
+      <form action="">
+      <input  class="modal__input" required type="name" placeholder="Ваше ім’я...">
       <button class="modal__btnsave" type="submit" data-close-modal-button>Зберегти</button>
+    </form>
       <img class="modal__img puzzle" src="data:image/webp;base64,UklGRsACAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSCABAAABkGPbtmpF+zzcyZzMHSK6QObuF++AuxO568U1JSNiEGsKqWu52wnuq3/fq+pAREwALHSKefh5neAMq1M5DOGcYtmfQAABXy1jqGyFV6UQBX98AXhwiRAiT6P3Qkq54QPAf0NKOf1bo6sbmvxvEEA20D7zljPQNVIZQ38hpKeZ0Jc1YPG9gaYn+f6LYWLk8eHBbyX1mgDjJhpEIHlMChhEULu6AKC7E6YMtX4DAAqFEF2XAOisXQhR5UFmDRPKnxkp5ZAyKqVcOetvPiPFhw0ADIfrj/ffMUE12ritlTW69mUOwdzJZ7hbqxuaGkafLU5vvzfaYBxMNLHub0fAIGg7RrDlqs0JIOuIj8pO6qyDU97qfpcNALr/q3adn6zbrAFWUDggegEAAHAKAJ0BKh4AHgA+kUKcSiWjoqGoCACwEglpABPH31VjHdEN1QD+df7T7Zvig/qvKh81f7T3BP4n/K/9twB37AJZ52VPj5/gO2Nim5b5iltxPlGsHsaUNhHSe6a4AP7/GszDxpg3LxigYwbcp88VEHu8HlS+0vjt8Fw85602iiHw40eWVeMXwXRoPs/A8RNZ1fL2QVI8CEZXjcgbbgwYJtt9ByRl0QIvS35ArwY3yj7PRnY4wI5hpGA/xUlA8lZI7HPrYFgu4fVkYWDwxoQ2nTyISuYmAo93ljt68PdOuvOZlAyL3qm3O6LWOo1x6R/cI6sB4t/rXttSQXjEpUgrJFjbGT8g4d+WNZSG6l+Juh+9ydeVS7YAYH7cjv+brDlPSAHfj8RPXKLxk14Sv0Pqi4ntcw+YbGwdLdmkHwZsIqfXd9+SKL2ZQqv3iKc9PC+oP3lRnp1QjDez6S/ba/GV+Rvr+XchbfCrdqc6PJH9n79+7CjsbwzpwXcAAA==" alt="puzzle">
       <img class="modal__img tic-tac-toe" src="data:image/webp;base64,UklGRhIBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSMUAAAABgFtt2/LkeT9apyQdUrIINVs4FVkBh7XcK3frnP988j7omzeZICImIIxVdE/1UM9qKsXEPJbYBysJa00rEn4gXWTu6XhU/FTJvB6cZE8vu4dLGXGCMgD9vPAiAbTz0Uk+yozIhS44ob9kqjJ4tQ0peSLwsrZAoblkmguZm0SYSZjZGgKBNGEz94ZK/VZSetYkbmGJfA7wS6q5V9yuNa0lhZdM34WwciReEAACeOgvY0Naac2vpmks0VwyrZpnpZ5MDVZjAQBWUDggJgAAANACAJ0BKh4AHgA+kUSdSqWjoqGoCACwEglpAAA9o6AA/vjPGsAA" alt="game">
     </form>
