@@ -10,8 +10,6 @@
     foterModal.openModalBtn.addEventListener("click", (event) => {
         if (inputModal.value.trim() !== "") {
             toggleModal();
-        } else {
-            alert("Будь ласка, введіть вашу електронну адресу!!");
         }
     });
 
