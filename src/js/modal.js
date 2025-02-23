@@ -14,8 +14,6 @@
     headerModal.closeModal.addEventListener("click", (event) => {
         if (modalInput.value.trim() !== "") {
             toggleModal(event);
-        } else {
-            alert("Будь ласка, введіть ваше ім’я!!");
         }
     });
 
