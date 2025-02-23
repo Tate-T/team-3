@@ -6,7 +6,7 @@ imgElement.addEventListener("click", () => {
     const inputElements = document.querySelectorAll("input");
 
     if (imgSrc.includes("light-switch.webp")) {
-        imgElement.src = "./img/dark-switch.webp";
+        imgElement.src = "../img/dark-switch.webp";
         document.body.style.backgroundColor = "#3a3a3a";
 
         allElements.forEach((el) => el.style.color = "white");
