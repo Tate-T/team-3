@@ -13,7 +13,7 @@ imgElement.addEventListener("click", () => {
         inputElements.forEach((el) => el.style.color = "black");
 
     } else {
-        imgElement.src = "./img/light-switch.webp";
+        imgElement.src = "../img/light-switch.webp";
         document.body.style.backgroundColor = "white";
 
         allElements.forEach((el) => el.style.color = "black");
