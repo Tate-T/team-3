@@ -32,6 +32,7 @@ arrowLeft.addEventListener("click", () => {
     photo2.style.display = "none"
     photo1.style.display = "inherit"
     numbers -= 1
+
   }
 });
 
