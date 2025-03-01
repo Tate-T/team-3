@@ -15,30 +15,45 @@ const scientists = [
 
 const scientistCards = document.querySelectorAll(".scientists__element");
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        const cards = document.querySelectorAll(".scientists__element");
-
-        cards.forEach(card => {
-            card.classList.add("rotate");
-            card.addEventListener("e", () => {
-                card.classList.remove("rotate");
-            });
-        });
-    });
-});
-
 function updateScientistCards(data) {
     scientistCards.forEach((card, index) => {
-        if (data[index]) {
-            card.innerHTML = `<p>${data[index].name} ${data[index].surname}</p>`;
-            card.style.display = "flex";
+        if (data.length > 0) {
+            if (data[index]) {
+                card.innerHTML = `<p>${data[index].name} ${data[index].surname}</p>`;
+                card.style.display = "flex";
+            } else {
+                card.style.display = "none";
+            }
         } else {
+            card.innerHTML = "";
             card.style.display = "none";
         }
     });
 }
+
+document.querySelector(".scientists__einstein").addEventListener("click", () => {
+    const einstein = scientists.find(person => person.name === "Albert" && person.surname === "Einstein");
+    if (einstein) {
+        scientistCards.forEach(card => card.style.display = "none");
+        scientistCards[0].innerHTML = `<p>Рік народження: ${einstein.born}</p>`;
+        scientistCards[0].style.display = "flex";
+    }
+});
+
+document.querySelector(".scientists__longest-shortest").addEventListener("click", () => {
+    let longestLived = scientists[0];
+    let shortestLived = scientists[0];
+    for (const person of scientists) {
+        const age = person.dead - person.born;
+        if (age > (longestLived.dead - longestLived.born)) {
+            longestLived = person;
+        }
+        if (age < (shortestLived.dead - shortestLived.born)) {
+            shortestLived = person;
+        }
+    }
+    updateScientistCards([longestLived, shortestLived]);
+});
 
 document.querySelector(".scientists__century").addEventListener("click", () => {
     updateScientistCards(scientists.filter(person => person.born >= 1801 && person.born <= 1900));
@@ -49,27 +64,14 @@ document.querySelector(".scientists__sort-alpha").addEventListener("click", () =
 });
 
 document.querySelector(".scientists__sort-age").addEventListener("click", () => {
-    updateScientistCards([...scientists].sort((a, b) => {
-        const ageA = a.dead - a.born;
-        const ageB = b.dead - b.born;
-        return ageB - ageA;
-    }));
+    updateScientistCards([...scientists].sort((a, b) => (b.dead - b.born) - (a.dead - a.born)));
 });
+
 document.querySelector(".scientists__latest").addEventListener("click", () => {
-    let latestBorn = scientists[0];
-    for (const person of scientists) {
-        if (person.born > latestBorn.born) {
-            latestBorn = person;
-        }
-    }
+    let latestBorn = scientists.reduce((latest, person) => person.born > latest.born ? person : latest, scientists[0]);
     updateScientistCards([latestBorn]);
 });
-document.querySelector(".scientists__einstein").addEventListener("click", () => {
-    const einstein = scientists.find(person => person.name === "Albert" && person.surname === "Einstein");
-    if (einstein) {
-        alert(`Альберт Ейнштейн народився у ${einstein.born} році.`);
-    }
-});
+
 document.querySelector(".scientists__surname-c").addEventListener("click", () => {
     updateScientistCards(scientists.filter(person => person.surname.startsWith("C")));
 });
@@ -77,24 +79,9 @@ document.querySelector(".scientists__surname-c").addEventListener("click", () =>
 document.querySelector(".scientists__delete-a").addEventListener("click", () => {
     updateScientistCards(scientists.filter(person => !person.name.startsWith("A")));
 });
-document.querySelector(".scientists__longest-shortest").addEventListener("click", () => {
-    let longestLived = scientists[0];
-    let shortestLived = scientists[0];
 
-    for (const person of scientists) {
-        const age = person.dead - person.born;
-        if (age > (longestLived.dead - longestLived.born)) {
-            longestLived = person;
-        }
-        if (age < (shortestLived.dead - shortestLived.born)) {
-            shortestLived = person;
-        }
-    }
-
-    alert(`Найдовше прожив ${longestLived.name} ${longestLived.surname} (${longestLived.dead - longestLived.born} років).
-    Найменше прожив ${shortestLived.name} ${shortestLived.surname} (${shortestLived.dead - shortestLived.born} років).`);
-});
 document.querySelector(".scientists__buttons").addEventListener("click", () => {
     updateScientistCards(scientists.filter(person => person.name[0] === person.surname[0]));
 });
+
 updateScientistCards(scientists);
