@@ -1,8 +1,14 @@
 .footer {
+
   padding-top: 61px;
   padding-bottom: 59px;
   &__megacontainer {
     display: flex;
+    @media screen and (max-width: 700px) {
+      row-gap: 30px;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   &__container {
     margin: 0;
@@ -62,5 +68,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media screen and (max-width: 700px) {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 }
